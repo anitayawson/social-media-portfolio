@@ -5,11 +5,13 @@ import Projects from "../sections/Projects";
 import Highlights from "../sections/Highlights";
 import Testimonials from "../sections/Testimonials";
 import Contact from "../sections/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <Navbar />
+      <main className="">
         <Hero />
         <About />
         <Projects />
@@ -17,6 +19,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
